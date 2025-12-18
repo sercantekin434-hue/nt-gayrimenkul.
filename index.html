@@ -3,159 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NT Gayrimenkul & Otomotiv</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>NT Gayrimenkul & Otomotiv | Kayseri</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#f5f5f5;color:#222}
-section{padding:60px 20px}
-h2{text-align:center;font-size:32px;margin-bottom:20px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f4f4f4;color:#222}
 
-/* GİRİŞ ANİMASYONU */
-#loader{
-position:fixed;inset:0;background:#000;display:flex;
-align-items:center;justify-content:center;z-index:9999;
-animation:fadeOut 1s ease forwards;animation-delay:1.6s
+/* SPLASH */
+#splash{
+ position:fixed;inset:0;background:#000;z-index:9999;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ animation:fadeOut 0.6s ease 1.6s forwards
 }
-#loader img{
-width:160px;height:160px;border-radius:50%;
-animation:zoom 1.2s ease
+#splash img{
+ width:160px;height:160px;border-radius:50%;margin-bottom:15px
 }
-@keyframes zoom{from{transform:scale(.5)}to{transform:scale(1)}}
+#splash h2{color:#d4af37;font-size:20px}
+
 @keyframes fadeOut{to{opacity:0;visibility:hidden}}
 
-/* HERO */
-.hero{
-background:#111;color:#fff;text-align:center;padding:90px 20px
+/* HEADER */
+header{
+ background:#000;color:#fff;padding:40px 20px;text-align:center
 }
-.hero img{width:200px;border-radius:50%;margin-bottom:20px}
-.hero h1{font-size:42px}
-.hero p{opacity:.85}
+header img{width:200px;border-radius:50%;margin-bottom:15px}
+header h1{color:#d4af37}
+header p{opacity:.9;margin-top:8px}
 
-/* HİZMETLER */
+/* SECTION */
+section{padding:60px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:40px;color:#000}
+
+/* SERVICES */
 .services{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;max-width:1100px;margin:auto
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px
 }
-.service{
-background:#fff;padding:20px;border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,.1)
+.card{
+ background:#fff;border-radius:12px;padding:20px;text-align:center;
+ box-shadow:0 5px 15px rgba(0,0,0,.1)
 }
-.service img{width:100%;border-radius:10px}
-
-/* MEMNUNİYET */
-.reviews{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;max-width:1000px;margin:auto
-}
-.review{
-background:#fff;padding:20px;border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,.1)
-}
+.card img{width:100%;height:150px;object-fit:cover;border-radius:10px}
+.card h3{margin:15px 0}
 
 /* CTA */
 .cta{
-background:#111;color:#fff
+ background:#222;color:#fff;padding:50px 20px;margin-top:60px
 }
 .cta-inner{
-max-width:1100px;margin:auto;
-display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between
+ display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+ max-width:1100px;margin:auto;gap:30px
 }
 .cta a{
-background:#25d366;color:#fff;padding:14px 25px;
-border-radius:40px;text-decoration:none;font-weight:bold
+ background:#25d366;color:#fff;padding:14px 28px;border-radius:30px;
+ text-decoration:none;font-weight:bold
 }
 .cta-badge{
-border:2px solid #fff;padding:20px;border-radius:12px;
-font-size:20px;text-align:center
+ border:2px solid #d4af37;padding:20px;border-radius:12px;
+ color:#d4af37;font-weight:bold;text-align:center
 }
-.cta-badge span{color:#25d366;font-weight:bold}
 
-/* BUTONLAR */
-.fab{
-position:fixed;right:20px;display:flex;align-items:center;
-gap:8px;padding:12px 16px;border-radius:40px;
-color:#fff;text-decoration:none;font-weight:bold
+/* REVIEWS */
+.reviews{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px
+}
+.review{
+ background:#fff;padding:20px;border-radius:12px;
+ box-shadow:0 5px 15px rgba(0,0,0,.1)
+}
+.stars{color:#f5c518;font-size:18px;margin-top:8px}
+
+/* MAP */
+iframe{width:100%;height:350px;border-radius:12px;border:none}
+
+/* FLOAT BUTTONS */
+.float{
+ position:fixed;right:20px;padding:12px 18px;border-radius:30px;
+ color:#fff;text-decoration:none;font-weight:bold;display:flex;gap:8px
 }
 .whatsapp{bottom:20px;background:#25d366}
 .instagram{bottom:70px;background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)}
+
+footer{
+ background:#000;color:#aaa;text-align:center;padding:20px;margin-top:60px
+}
 </style>
 </head>
 
 <body>
 
-<div id="loader">
-<img src="logo.png">
+<!-- SPLASH -->
+<div id="splash">
+  <img src="logo.png" alt="NT Logo">
+  <h2>NT Gayrimenkul & Otomotiv</h2>
 </div>
 
-<section class="hero">
-<img src="logo.png">
-<h1>NT Gayrimenkul & Otomotiv</h1>
-<p>Güvenilir • Hızlı • Profesyonel Alım & Satım</p>
-</section>
+<header>
+  <img src="logo.png">
+  <h1>NT Gayrimenkul & Otomotiv</h1>
+  <p>Güvenilir • Hızlı • Profesyonel</p>
+</header>
 
 <section>
 <h2>Hizmetlerimiz</h2>
 <div class="services">
-<div class="service">
-<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688">
-<h3>Satılık & Kiralık Daire</h3>
-<p>Kayseri genelinde güvenilir, hızlı ve sorunsuz konut çözümleri.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02b7">
+    <h3>Satılık & Kiralık Daire</h3>
+  </div>
 
-<div class="service">
-<img src="https://images.unsplash.com/photo-1605559424843-9c9c6b9c6c0f">
-<h3>Otomotiv Alım Satım</h3>
-<p>Mercedes (siyah) ve BMW (beyaz) gibi seçkin araçlarla profesyonel hizmet.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+    <h3>Villa Satışları</h3>
+  </div>
 
-<div class="service">
-<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
-<h3>Arsa • Tarla • Parsel</h3>
-<p>Yatırıma uygun, resmi işlemleri hazır gayrimenkuller.</p>
-</div>
-</div>
-</section>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+    <h3>Arsa & Tarla</h3>
+  </div>
 
-<section>
-<h2>Müşteri Memnuniyeti</h2>
-<div class="reviews">
-<div class="review"><strong>Ahmet K.</strong><br>Hızlı ve güvenilir satış, teşekkür ederim.</div>
-<div class="review"><strong>Mehmet Y.</strong><br>İlgili ve güler yüzlü ekip.</div>
-<div class="review"><strong>Fatma D.</strong><br>Aracımı kısa sürede sattılar.</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e">
+    <h3>Otomotiv Alım Satım</h3>
+  </div>
 </div>
 </section>
 
 <section class="cta">
-<div class="cta-inner">
-<div>
-<h2>Evinizi veya Aracınızı Hızlı Satmak mı İstiyorsunuz?</h2>
-<a href="https://wa.me/905358263365">Hemen WhatsApp’tan Yazın</a>
-</div>
-<div class="cta-badge">
-NT Gayrimenkul & Otomotiv<br><span>Güvencesiyle</span>
-</div>
+  <div class="cta-inner">
+    <div>
+      <h2>Evinizi veya Aracınızı Hızlı Satmak mı İstiyorsunuz?</h2><br>
+      <a href="https://wa.me/905358263365">Hemen WhatsApp’tan Yazın</a>
+    </div>
+    <div class="cta-badge">
+      NT Gayrimenkul &<br>Otomotiv<br><span>Güvencesiyle</span>
+    </div>
+  </div>
+</section>
+
+<section>
+<h2>Müşteri Yorumları</h2>
+<div class="reviews">
+  <div class="review">
+    <strong>Mehmet K.</strong>
+    <p>Evimi çok kısa sürede sattılar.</p>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+  </div>
+
+  <div class="review">
+    <strong>Ayşe T.</strong>
+    <p>İlgili ve güvenilir bir ekip.</p>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+  </div>
+
+  <div class="review">
+    <strong>Serkan Y.</strong>
+    <p>Villamı hemen sattılar.</p>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+  </div>
 </div>
 </section>
 
 <section>
 <h2>Ofis Konumumuz</h2>
-<iframe
-src="https://www.google.com/maps?q=Kayseri+Kocasinan+Zümrüt+Mahallesi+Darendeli+Caddesi+32/B&output=embed"
-width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+<iframe 
+src="https://www.google.com/maps?q=Kayseri+Kocasinan+Zümrüt+Mahallesi+Darendeli+Caddesi+32/B&output=embed">
+</iframe>
 </section>
 
-<section style="text-align:center;font-size:14px;color:#666">
-© 2025 NT Gayrimenkul & Otomotiv — Kayseri genelinde profesyonel hizmet.
-</section>
+<a class="float whatsapp" href="https://wa.me/905358263365">WhatsApp</a>
+<a class="float instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv">Instagram</a>
 
-<a class="fab whatsapp" href="https://wa.me/905358263365">
-<i class="fab fa-whatsapp"></i> WhatsApp
-</a>
-
-<a class="fab instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv">
-<i class="fab fa-instagram"></i> Instagram
-</a>
+<footer>
+© 2025 NT Gayrimenkul & Otomotiv
+</footer>
 
 </body>
-                                               </html>
+</html>
