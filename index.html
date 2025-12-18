@@ -15,7 +15,12 @@ body{background:#f4f4f4;color:#333}
  display:flex;flex-direction:column;align-items:center;justify-content:center;
  animation:hideSplash .6s ease forwards;animation-delay:1.2s
 }
-#splash img{width:180px;border-radius:50%;margin-bottom:20px;animation:zoom .8s ease}
+#splash img{
+ width:240px;   /* BÜYÜTÜLDÜ */
+ border-radius:50%;
+ margin-bottom:25px;
+ animation:zoom .8s ease
+}
 #splash h1{color:#fff}
 #splash p{color:#25D366;margin-top:8px}
 @keyframes hideSplash{to{opacity:0;visibility:hidden}}
@@ -23,11 +28,22 @@ body{background:#f4f4f4;color:#333}
 
 /* HEADER */
 header{
- background:#000;color:#fff;text-align:center;padding:70px 20px
+ background:#000;color:#fff;text-align:center;
+ padding:80px 20px
 }
-header img{width:220px;border-radius:50%;margin-bottom:20px}
-header h1{font-size:32px}
-header p{max-width:900px;margin:15px auto;color:#ddd;line-height:1.6}
+header img{
+ width:300px;   /* BÜYÜTÜLDÜ */
+ border-radius:50%;
+ margin-bottom:25px
+}
+header h1{font-size:34px}
+header p{
+ max-width:900px;
+ margin:15px auto;
+ color:#ddd;
+ line-height:1.6;
+ font-size:17px
+}
 header span{color:#25D366;font-weight:bold}
 
 /* SECTION */
@@ -46,8 +62,9 @@ h2{text-align:center;margin-bottom:40px;font-size:26px}
  padding:25px;text-align:center
 }
 .box img{
- width:100%;height:180px;object-fit:cover;
- border-radius:10px;margin-bottom:15px
+ width:100%;height:180px;
+ object-fit:cover;border-radius:10px;
+ margin-bottom:15px
 }
 
 /* STATS */
@@ -56,11 +73,24 @@ h2{text-align:center;margin-bottom:40px;font-size:26px}
  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
  gap:25px
 }
-.stat h3{font-size:36px;color:#25D366;margin-bottom:10px}
+.stat h3{font-size:36px;color:#25D366}
 
 /* COMMENTS */
 .comment h4{margin-bottom:8px}
 .comment span{color:#f1c40f;font-size:18px}
+
+/* CTA */
+.cta{
+ background:#000;color:#fff;text-align:center;
+ padding:70px 20px;margin:60px 0
+}
+.cta h2{margin-bottom:20px}
+.cta a{
+ background:#25D366;color:#fff;
+ padding:16px 30px;border-radius:50px;
+ text-decoration:none;font-weight:bold;
+ display:inline-block
+}
 
 /* FLOAT BUTTONS */
 .float{
@@ -124,43 +154,18 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
 <section>
 <h2>Müşteri Memnuniyeti</h2>
 <div class="stats">
- <div class="stat">
-  <h3>150+</h3>
-  <p>Mutlu Müşteri</p>
- </div>
- <div class="stat">
-  <h3>%100</h3>
-  <p>Güvenli İşlem</p>
- </div>
- <div class="stat">
-  <h3>7/24</h3>
-  <p>İletişim & Destek</p>
- </div>
+ <div class="stat"><h3>150+</h3><p>Mutlu Müşteri</p></div>
+ <div class="stat"><h3>%100</h3><p>Güvenli İşlem</p></div>
+ <div class="stat"><h3>7/24</h3><p>İletişim</p></div>
 </div>
-<p style="text-align:center;margin-top:25px;font-size:16px">
-Her müşterimizi uzun vadeli bir dostluk olarak görür,  
-<strong>hızlı, şeffaf ve güvenilir</strong> hizmet sunarız.
-</p>
 </section>
 
 <section>
 <h2>Müşteri Yorumları</h2>
 <div class="grid">
- <div class="comment">
-  <h4>Mehmet K.</h4>
-  <span>★★★★★</span>
-  <p>Ev satış sürecimiz çok hızlı ve sorunsuz ilerledi.</p>
- </div>
- <div class="comment">
-  <h4>Ayşe T.</h4>
-  <span>★★★★★</span>
-  <p>Güler yüzlü, ilgili ve güvenilir bir ekip.</p>
- </div>
- <div class="comment">
-  <h4>Ahmet Y.</h4>
-  <span>★★★★★</span>
-  <p>Araç alımında her konuda yardımcı oldular.</p>
- </div>
+ <div class="comment"><h4>Mehmet K.</h4><span>★★★★★</span><p>Çok hızlı ve güvenilir hizmet.</p></div>
+ <div class="comment"><h4>Ayşe T.</h4><span>★★★★★</span><p>İlgili ve çözüm odaklı bir ekip.</p></div>
+ <div class="comment"><h4>Ahmet Y.</h4><span>★★★★★</span><p>Araç alımında sorunsuz süreç.</p></div>
 </div>
 </section>
 
@@ -168,19 +173,25 @@ Her müşterimizi uzun vadeli bir dostluk olarak görür,
 <h2>Ofis Konumumuz</h2>
 <iframe
  src="https://www.google.com/maps?q=Kayseri%20Kocasinan%20Z%C3%BCmr%C3%BCt%20Mahallesi%20Darendeli%20Caddesi%2032/B&output=embed"
- width="100%" height="320" style="border:0;border-radius:12px;" loading="lazy">
+ width="100%" height="320"
+ style="border:0;border-radius:12px;" loading="lazy">
 </iframe>
 <p style="text-align:center;margin-top:15px">
 📍 Zümrüt Mah. Darendeli Cd. No:32/B – Kocasinan / Kayseri
 </p>
 </section>
 
+<section class="cta">
+ <h2>Evinizi veya Aracınızı Hızlı Satmak mı İstiyorsunuz?</h2>
+ <a href="https://wa.me/905358263365">Hemen WhatsApp’tan Yazın</a>
+</section>
+
 <div class="float">
  <a class="instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv">📷 Instagram</a>
- <a class="whatsapp" href="https://wa.me/905358263365?text=Merhaba%20NT%20Gayrimenkul%20sitesinden%20yazıyorum">💬 WhatsApp</a>
+ <a class="whatsapp" href="https://wa.me/905358263365">💬 WhatsApp</a>
 </div>
 
 <footer>© 2025 NT Gayrimenkul & Otomotiv</footer>
 
 </body>
-  </html>
+</html>
