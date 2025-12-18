@@ -8,27 +8,43 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background:#f4f6f8;
     color:#333;
 }
 header{
-    background:#1f2937;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
     color:#fff;
-    padding:30px 20px;
+    padding:60px 20px;
     text-align:center;
 }
 header h1{
     margin:0;
-    font-size:28px;
+    font-size:34px;
 }
 header p{
-    margin-top:10px;
-    font-size:15px;
-    opacity:.9;
+    margin:15px 0 30px;
+    font-size:16px;
+    opacity:.95;
+}
+.hero-buttons a{
+    display:inline-block;
+    margin:8px;
+    padding:14px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.btn-whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+.btn-sahibinden{
+    background:#f59e0b;
+    color:#111;
 }
 nav{
-    background:#111827;
+    background:#020617;
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
@@ -40,64 +56,64 @@ nav a{
     font-size:14px;
 }
 nav a:hover{
-    background:#374151;
+    background:#1e293b;
 }
 .container{
     max-width:1100px;
     margin:auto;
-    padding:25px 15px;
+    padding:30px 15px;
 }
 .section{
     background:#fff;
-    padding:25px;
-    margin-bottom:25px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 .section h2{
     margin-top:0;
-    color:#111827;
+    color:#020617;
 }
 .services{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
+    gap:20px;
 }
 .service{
     background:#f1f5f9;
-    padding:20px;
-    border-radius:6px;
+    padding:25px;
+    border-radius:8px;
     text-align:center;
     font-weight:bold;
+    font-size:15px;
 }
-.links a{
+.social-links a{
     display:inline-block;
-    margin-right:15px;
-    margin-top:10px;
+    margin:10px 15px 0 0;
     text-decoration:none;
-    color:#1f2937;
     font-weight:bold;
+    color:#020617;
 }
 footer{
-    background:#1f2937;
+    background:#020617;
     color:#fff;
     text-align:center;
-    padding:20px;
+    padding:25px;
     font-size:14px;
 }
 
-/* WhatsApp Business Sabit Buton */
+/* WhatsApp sabit buton */
 .whatsapp{
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25D366;
     color:#fff;
-    padding:14px 18px;
+    padding:15px 20px;
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
-    box-shadow:0 4px 10px rgba(0,0,0,.3);
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
     z-index:9999;
 }
 </style>
@@ -107,7 +123,16 @@ footer{
 
 <header>
     <h1>NT Gayrimenkul & Otomotiv</h1>
-    <p>Kayseri genelinde satılık – kiralık gayrimenkul ve otomotiv alım satım hizmetleri</p>
+    <p>Kayseri’nin tüm ilçelerinde güvenilir emlak ve otomotiv çözümleri</p>
+
+    <div class="hero-buttons">
+        <a class="btn-whatsapp" href="https://wa.me/905358263365" target="_blank">
+            💬 WhatsApp’tan Yaz
+        </a>
+        <a class="btn-sahibinden" href="#" target="_blank">
+            🏠 Sahibinden İlanlar
+        </a>
+    </div>
 </header>
 
 <nav>
@@ -122,23 +147,20 @@ footer{
 <section id="anasayfa" class="section">
     <h2>Hoş Geldiniz</h2>
     <p>
-        NT Gayrimenkul & Otomotiv olarak Kayseri’nin tüm ilçelerinde
-        satılık ve kiralık daire, arsa, işyeri ve otomotiv alım satım
-        alanlarında güvenilir hizmet sunuyoruz.
-    </p>
-    <p>
-        Bizimle <strong>WhatsApp Business</strong> üzerinden hızlı ve kolayca iletişime geçebilirsiniz.
+        NT Gayrimenkul & Otomotiv olarak Kayseri genelinde satılık ve kiralık
+        gayrimenkul ile otomotiv alım–satım hizmetleri sunuyoruz.
+        Güven, şeffaflık ve hızlı çözüm bizim önceliğimizdir.
     </p>
 </section>
 
 <section id="hakkimizda" class="section">
     <h2>Hakkımızda</h2>
     <p>
-        Gayrimenkul ve otomotiv sektöründe edindiğimiz tecrübeyle,
-        müşterilerimize hem profesyonel hem de samimi bir hizmet anlayışı sunuyoruz.
+        Gayrimenkul ve otomotiv sektöründe edindiğimiz tecrübe ile
+        müşterilerimize hem profesyonel hem de samimi bir hizmet sunuyoruz.
     </p>
     <p>
-        Amacımız; doğru yatırımı, doğru kişilerle, güvenli şekilde buluşturmaktır.
+        Doğru yatırımı, doğru fiyata ve güvenli şekilde buluşturmayı hedefliyoruz.
     </p>
 </section>
 
@@ -147,9 +169,9 @@ footer{
     <div class="services">
         <div class="service">🏠 Satılık Daire</div>
         <div class="service">🔑 Kiralık Daire</div>
-        <div class="service">🌍 Arsa / Tarla</div>
-        <div class="service">🏢 Dükkan / İşyeri</div>
+        <div class="service">🌍 Arsa & Tarla</div>
         <div class="service">🚗 Otomotiv Alım Satım</div>
+        <div class="service">📊 Gayrimenkul Danışmanlığı</div>
     </div>
 </section>
 
@@ -157,11 +179,10 @@ footer{
     <h2>İletişim</h2>
     <p>📍 Hizmet Bölgesi: Kayseri (Tüm İlçeler)</p>
     <p>📞 Telefon / WhatsApp Business: <strong>+90 535 826 33 65</strong></p>
-    <p>💬 WhatsApp Business üzerinden 7/24 mesaj atabilirsiniz.</p>
 
-    <div class="links">
+    <div class="social-links">
         <a href="https://wa.me/905358263365" target="_blank">💬 WhatsApp Business</a>
-        <a href="#" target="_blank">📸 Instagram</a>
+        <a href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">📸 Instagram</a>
         <a href="#" target="_blank">🏠 Sahibinden</a>
     </div>
 </section>
@@ -173,8 +194,8 @@ footer{
 </footer>
 
 <a class="whatsapp" href="https://wa.me/905358263365" target="_blank">
-💬 WhatsApp Business
+💬 WhatsApp
 </a>
 
 </body>
-    </html>
+</html>
