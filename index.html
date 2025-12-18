@@ -17,8 +17,6 @@ body{
     color:#333;
     animation:fadeIn 1.2s ease;
 }
-
-/* PAGE LOAD */
 @keyframes fadeIn{
     from{opacity:0; transform:translateY(20px);}
     to{opacity:1; transform:translateY(0);}
@@ -29,25 +27,27 @@ header{
     background:#000;
     color:#fff;
     text-align:center;
-    padding:35px 15px;
+    padding:55px 20px;
 }
 header img{
-    width:150px;
+    width:210px;
     border-radius:50%;
-    margin-bottom:15px;
-    animation:zoomIn 1s ease;
-}
-@keyframes zoomIn{
-    from{transform:scale(0.6); opacity:0;}
-    to{transform:scale(1); opacity:1;}
+    margin-bottom:20px;
 }
 header h1{
-    font-size:26px;
-    margin-bottom:10px;
+    font-size:30px;
+    margin-bottom:12px;
 }
 header p{
-    font-size:15px;
-    opacity:0.9;
+    max-width:900px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.6;
+    color:#ddd;
+}
+header span{
+    color:#25D366;
+    font-weight:bold;
 }
 
 /* SECTION */
@@ -73,7 +73,7 @@ section h2{
     border-radius:12px;
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,0.1);
-    transition:0.4s;
+    transition:.4s;
 }
 .service-box:hover{
     transform:translateY(-8px);
@@ -82,7 +82,6 @@ section h2{
     width:100%;
     height:180px;
     object-fit:cover;
-    filter:grayscale(100%);
 }
 .service-box div{
     padding:20px;
@@ -93,16 +92,6 @@ section h2{
 .service-box p{
     font-size:14px;
     line-height:1.6;
-}
-
-/* ABOUT */
-.about{
-    background:#fff;
-    border-radius:12px;
-    padding:30px;
-    text-align:center;
-    line-height:1.7;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* FLOAT BUTTONS */
@@ -126,17 +115,9 @@ section h2{
     font-weight:bold;
     text-decoration:none;
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    transition:0.3s;
 }
-.float-buttons a:hover{
-    transform:translateX(-5px);
-}
-.whatsapp{
-    background:#25D366;
-}
-.instagram{
-    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
-}
+.whatsapp{background:#25D366;}
+.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);}
 
 /* FOOTER */
 footer{
@@ -155,18 +136,14 @@ footer{
 <header>
     <img src="logo.png" alt="NT Gayrimenkul Logo">
     <h1>NT GAYRİMENKUL & OTOMOTİV</h1>
-    <p>Kayseri’nin Tüm İlçelerinde Güvenilir Çözümler</p>
-</header>
-
-<section class="about">
-    <h2>Hakkımızda</h2>
     <p>
-        NT Gayrimenkul & Otomotiv olarak Kayseri genelinde
-        satılık – kiralık gayrimenkul ve otomotiv alım–satım
-        hizmetleri sunuyoruz. Güven, şeffaflık ve doğru fiyat
-        politikası ile yanınızdayız.
+        Kayseri’nin tüm ilçelerinde  
+        <span>güvenilir</span>,  
+        <span>hızlı</span> ve  
+        <span>doğru fiyatlı</span>  
+        gayrimenkul & otomotiv çözümleri
     </p>
-</section>
+</header>
 
 <section>
     <h2>Hizmetlerimiz</h2>
@@ -177,7 +154,10 @@ footer{
             <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Bina">
             <div>
                 <h3>🏢 Satılık & Kiralık Daire</h3>
-                <p>Merkez ve tüm ilçelerde modern binalarda, güvenilir satılık ve kiralık daire seçenekleri.</p>
+                <p>
+                    Modern binalarda, merkezi konumlarda
+                    satılık ve kiralık daire seçenekleri.
+                </p>
             </div>
         </div>
 
@@ -186,7 +166,9 @@ footer{
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Villa">
             <div>
                 <h3>🏡 Villa & Müstakil</h3>
-                <p>Bahçeli, lüks ve müstakil yaşam alanları için özel portföyler.</p>
+                <p>
+                    Bahçeli, lüks ve müstakil yaşam alanları.
+                </p>
             </div>
         </div>
 
@@ -195,16 +177,21 @@ footer{
             <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Arsa">
             <div>
                 <h3>🌾 Arsa – Tarla – Parsel</h3>
-                <p>Yatırıma uygun arazi, tarla ve imarlı parsel seçenekleri.</p>
+                <p>
+                    Yatırıma uygun arazi ve imarlı parseller.
+                </p>
             </div>
         </div>
 
         <!-- OTOMOTİV -->
         <div class="service-box">
-            <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068" alt="Mercedes BMW">
+            <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5" alt="Mercedes Siyah BMW Beyaz">
             <div>
                 <h3>🚗 Otomotiv Alım–Satım</h3>
-                <p>Mercedes & BMW başta olmak üzere güvenilir, prestijli araç alım–satım hizmetleri.</p>
+                <p>
+                    Mercedes (siyah) & BMW (beyaz) başta olmak üzere
+                    prestijli araç alım–satımı.
+                </p>
             </div>
         </div>
 
@@ -219,7 +206,6 @@ footer{
     </p>
 </section>
 
-<!-- FLOAT BUTTONS -->
 <div class="float-buttons">
     <a class="instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">
         📷 Instagram
