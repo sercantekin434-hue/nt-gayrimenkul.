@@ -6,115 +6,107 @@
 <title>NT Gayrimenkul & Otomotiv | Kayseri</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
-    color:#333;
-}
-header{
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    color:#fff;
-    padding:60px 20px;
-    text-align:center;
-}
-header h1{
-    margin:0;
-    font-size:34px;
-}
-header p{
-    margin:15px 0 30px;
-    font-size:16px;
-    opacity:.95;
-}
-.hero-buttons a{
-    display:inline-block;
-    margin:8px;
-    padding:14px 22px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-.btn-whatsapp{
-    background:#25D366;
-    color:#fff;
-}
-.btn-sahibinden{
-    background:#f59e0b;
-    color:#111;
-}
-nav{
-    background:#020617;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-nav a{
-    color:#fff;
-    padding:14px 18px;
-    text-decoration:none;
-    font-size:14px;
-}
-nav a:hover{
-    background:#1e293b;
-}
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 15px;
-}
-.section{
-    background:#fff;
-    padding:30px;
-    margin-bottom:30px;
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
-}
-.section h2{
-    margin-top:0;
-    color:#020617;
-}
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-.service{
-    background:#f1f5f9;
-    padding:25px;
-    border-radius:8px;
-    text-align:center;
-    font-weight:bold;
-    font-size:15px;
-}
-.social-links a{
-    display:inline-block;
-    margin:10px 15px 0 0;
-    text-decoration:none;
-    font-weight:bold;
-    color:#020617;
-}
-footer{
-    background:#020617;
-    color:#fff;
-    text-align:center;
-    padding:25px;
-    font-size:14px;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
 }
 
-/* WhatsApp sabit buton */
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 4px 12px rgba(0,0,0,.3);
-    z-index:9999;
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+}
+
+header img {
+    width: 160px;
+    max-width: 90%;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: gold;
+    margin: 10px 0 5px;
+}
+
+header p {
+    color: #ddd;
+    font-size: 15px;
+}
+
+section {
+    padding: 35px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: gold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.08);
+}
+
+.service-box h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.about {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.social a {
+    display: inline-block;
+    margin: 10px;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* WhatsApp Sabit Buton */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(37,211,102,0.6);
+    z-index: 999;
 }
 </style>
 </head>
@@ -122,75 +114,85 @@ footer{
 <body>
 
 <header>
+    <img src="logo.png" alt="NT Gayrimenkul Logo">
     <h1>NT Gayrimenkul & Otomotiv</h1>
-    <p>Kayseri’nin tüm ilçelerinde güvenilir emlak ve otomotiv çözümleri</p>
-
-    <div class="hero-buttons">
-        <a class="btn-whatsapp" href="https://wa.me/905358263365" target="_blank">
-            💬 WhatsApp’tan Yaz
-        </a>
-        <a class="btn-sahibinden" href="#" target="_blank">
-            🏠 Sahibinden İlanlar
-        </a>
-    </div>
+    <p>Kayseri’nin Tüm İlçelerinde Satılık & Kiralık Gayrimenkul Hizmetleri</p>
 </header>
 
-<nav>
-    <a href="#anasayfa">Ana Sayfa</a>
-    <a href="#hakkimizda">Hakkımızda</a>
-    <a href="#hizmetler">Hizmetler</a>
-    <a href="#iletisim">İletişim</a>
-</nav>
-
-<div class="container">
-
-<section id="anasayfa" class="section">
-    <h2>Hoş Geldiniz</h2>
-    <p>
-        NT Gayrimenkul & Otomotiv olarak Kayseri genelinde satılık ve kiralık
-        gayrimenkul ile otomotiv alım–satım hizmetleri sunuyoruz.
-        Güven, şeffaflık ve hızlı çözüm bizim önceliğimizdir.
-    </p>
-</section>
-
-<section id="hakkimizda" class="section">
-    <h2>Hakkımızda</h2>
-    <p>
-        Gayrimenkul ve otomotiv sektöründe edindiğimiz tecrübe ile
-        müşterilerimize hem profesyonel hem de samimi bir hizmet sunuyoruz.
-    </p>
-    <p>
-        Doğru yatırımı, doğru fiyata ve güvenli şekilde buluşturmayı hedefliyoruz.
-    </p>
-</section>
-
-<section id="hizmetler" class="section">
+<section>
     <h2>Hizmetlerimiz</h2>
+
     <div class="services">
-        <div class="service">🏠 Satılık Daire</div>
-        <div class="service">🔑 Kiralık Daire</div>
-        <div class="service">🌍 Arsa & Tarla</div>
-        <div class="service">🚗 Otomotiv Alım Satım</div>
-        <div class="service">📊 Gayrimenkul Danışmanlığı</div>
+
+        <div class="service-box">
+            <h3>🏠 Satılık Daire</h3>
+            <p>
+                Kayseri genelinde her bütçeye uygun satılık daire seçenekleri.
+                Sıfır, ikinci el, yatırım amaçlı ve oturuma hazır daireler için
+                profesyonel danışmanlık sunuyoruz.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🔑 Kiralık Daire</h3>
+            <p>
+                Güvenilir kiracı & ev sahibi buluşturma hizmeti.
+                Hızlı, sorunsuz ve sözleşmeli kiralama işlemleri ile
+                yanınızdayız.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🏡 Villa & Müstakil Ev</h3>
+            <p>
+                Lüks villa, bahçeli ev ve müstakil yaşam arayanlar için
+                özel portföyler. Değerinde satış ve doğru yönlendirme.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🌾 Tarla & Arsa</h3>
+            <p>
+                Yatırıma uygun tarla ve arsa alım-satımı.
+                İmar durumu, konum analizi ve piyasa değerleme desteği.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>📐 Parsel & Yatırım</h3>
+            <p>
+                Parsel bazlı satışlar, uzun vadeli kazanç hedefleyen
+                yatırımcılar için güvenilir çözümler.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🚗 Otomotiv Alım & Satım</h3>
+            <p>
+                Temiz, güvenilir araç alım-satımı.
+                Araç takas, değerleme ve hızlı satış desteği.
+            </p>
+        </div>
+
     </div>
 </section>
 
-<section id="iletisim" class="section">
-    <h2>İletişim</h2>
-    <p>📍 Hizmet Bölgesi: Kayseri (Tüm İlçeler)</p>
-    <p>📞 Telefon / WhatsApp Business: <strong>+90 535 826 33 65</strong></p>
-
-    <div class="social-links">
-        <a href="https://wa.me/905358263365" target="_blank">💬 WhatsApp Business</a>
-        <a href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">📸 Instagram</a>
-        <a href="#" target="_blank">🏠 Sahibinden</a>
+<section>
+    <h2>Hakkımızda</h2>
+    <div class="about">
+        NT Gayrimenkul & Otomotiv olarak Kayseri’nin tüm ilçelerinde
+        dürüstlük, güven ve şeffaflık ilkesiyle hizmet veriyoruz.<br><br>
+        Müşteri memnuniyetini ön planda tutarak, alım-satım ve kiralama
+        süreçlerinde yanınızda oluyoruz.
     </div>
 </section>
-
-</div>
 
 <footer>
-    © 2025 NT Gayrimenkul & Otomotiv — Tüm Hakları Saklıdır
+    <div class="social">
+        <a href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">📸 Instagram</a>
+    </div>
+    <p>📞 WhatsApp Business: +90 535 826 33 65</p>
+    <p>© 2025 NT Gayrimenkul & Otomotiv</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/905358263365" target="_blank">
