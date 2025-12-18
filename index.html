@@ -3,28 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NT Gayrimenkul & Otomotiv</title>
+<title>NT Gayrimenkul & Otomotiv | Kayseri</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 body{background:#f4f4f4;color:#333;overflow-x:hidden}
 
-/* SPLASH */
+/* SPLASH (KISALTILDI) */
 #splash{
  position:fixed;inset:0;background:#000;z-index:9999;
  display:flex;flex-direction:column;align-items:center;justify-content:center;
- animation:hideSplash 1s ease forwards;animation-delay:2.8s
+ animation:hideSplash .6s ease forwards;animation-delay:1.2s
 }
 #splash img{
- width:190px;
- border-radius:50%;   /* 🔥 YUVARLAK LOGO */
- margin-bottom:20px;
- animation:zoom 1.2s ease
+ width:190px;border-radius:50%;margin-bottom:20px;
+ animation:zoom .8s ease
 }
-#splash h1{color:#fff;font-size:26px;letter-spacing:1px}
-#splash p{color:#25D366;margin-top:10px;font-size:16px}
+#splash h1{color:#fff;font-size:26px}
+#splash p{color:#25D366;margin-top:10px}
 @keyframes hideSplash{to{opacity:0;visibility:hidden}}
-@keyframes zoom{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes zoom{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
 
 /* HEADER */
 header{
@@ -32,9 +30,7 @@ header{
  padding:70px 20px
 }
 header img{
- width:220px;
- border-radius:50%;
- margin-bottom:20px
+ width:220px;border-radius:50%;margin-bottom:20px
 }
 header h1{font-size:32px}
 header p{
@@ -47,7 +43,7 @@ header span{color:#25D366;font-weight:bold}
 section{padding:60px 20px;max-width:1100px;margin:auto}
 h2{text-align:center;margin-bottom:40px;font-size:26px}
 
-/* BOX */
+/* GRID */
 .grid{
  display:grid;
  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -56,8 +52,8 @@ h2{text-align:center;margin-bottom:40px;font-size:26px}
 .box{
  background:#fff;border-radius:12px;overflow:hidden;
  box-shadow:0 8px 20px rgba(0,0,0,.1);
- transform:translateY(30px);opacity:0;
- transition:.6s
+ transform:translateY(25px);opacity:0;
+ transition:.5s
 }
 .box.show{transform:translateY(0);opacity:1}
 .box img{width:100%;height:180px;object-fit:cover}
@@ -69,14 +65,6 @@ h2{text-align:center;margin-bottom:40px;font-size:26px}
  padding:30px;text-align:center
 }
 .stats h3{font-size:36px;color:#25D366}
-
-/* COMMENTS */
-.comment{
- background:#fff;border-radius:12px;padding:25px;
- box-shadow:0 8px 20px rgba(0,0,0,.1);
- text-align:center
-}
-.comment span{color:#f1c40f;font-size:18px}
 
 /* FLOAT */
 .float{
@@ -91,7 +79,6 @@ h2{text-align:center;margin-bottom:40px;font-size:26px}
 }
 .whatsapp{background:#25D366}
 .instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)}
-.sahibinden{background:#f39c12}
 
 /* FOOTER */
 footer{background:#000;color:#fff;text-align:center;padding:20px}
@@ -124,40 +111,14 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
 </section>
 
 <section>
-<h2>Müşteri Memnuniyeti</h2>
-<div class="grid">
- <div class="box"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"><div><h3>Güler Yüz</h3><p>Samimi ve şeffaf hizmet</p></div></div>
- <div class="box"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"><div><h3>El Sıkışma</h3><p>Güvenli alım-satım</p></div></div>
- <div class="box"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"><div><h3>Hızlı Sonuç</h3><p>Zaman kaybetmeden işlem</p></div></div>
-</div>
-</section>
-
-<section>
-<div class="grid stats">
- <div><h3>100+</h3><p>Mutlu Müşteri</p></div>
- <div><h3>7/24</h3><p>İletişim</p></div>
- <div><h3>%100</h3><p>Memnuniyet</p></div>
-</div>
-</section>
-
-<section>
-<h2>Müşteri Yorumları</h2>
-<div class="grid">
- <div class="comment"><span>★★★★★</span><p>Çok hızlı ve güvenilir bir satış oldu.</p></div>
- <div class="comment"><span>★★★★★</span><p>Sürecin başından sonuna kadar ilgililerdi.</p></div>
- <div class="comment"><span>★★★★★</span><p>Gönül rahatlığıyla tavsiye ederim.</p></div>
-</div>
-</section>
-
-<section>
-<h2>Ofis Konumu</h2>
-<iframe src="https://www.google.com/maps?q=Kayseri&output=embed"
- width="100%" height="300" style="border:0;border-radius:12px;"></iframe>
-</section>
-
-<section style="text-align:center">
-<a class="sahibinden" style="padding:16px 30px;border-radius:50px;color:#fff;text-decoration:none;font-weight:bold"
- href="#" target="_blank">🏠 Tüm İlanlarımız (Sahibinden)</a>
+<h2>Ofis Konumumuz</h2>
+<iframe
+ src="https://www.google.com/maps?q=Kayseri%20Kocasinan%20Z%C3%BCmr%C3%BCt%20Mahallesi%20Darendeli%20Caddesi%2032/B&output=embed"
+ width="100%" height="320" style="border:0;border-radius:12px;" loading="lazy">
+</iframe>
+<p style="text-align:center;margin-top:15px">
+📍 Zümrüt Mah. Darendeli Cd. No:32/B – Kocasinan / Kayseri
+</p>
 </section>
 
 <div class="float">
@@ -171,7 +132,7 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
 const boxes=document.querySelectorAll('.box');
 window.addEventListener('scroll',()=>{
  boxes.forEach(b=>{
-  if(b.getBoundingClientRect().top<window.innerHeight-100){
+  if(b.getBoundingClientRect().top<window.innerHeight-80){
    b.classList.add('show');
   }
  });
