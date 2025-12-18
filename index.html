@@ -18,7 +18,7 @@ body{
     animation:fadeIn 1.2s ease;
 }
 
-/* PAGE LOAD ANIMATION */
+/* PAGE LOAD */
 @keyframes fadeIn{
     from{opacity:0; transform:translateY(20px);}
     to{opacity:1; transform:translateY(0);}
@@ -115,25 +115,27 @@ section h2{
     z-index:999;
 }
 .float-buttons a{
-    width:55px;
-    height:55px;
-    border-radius:50%;
     display:flex;
     align-items:center;
-    justify-content:center;
+    gap:10px;
+    padding:14px 18px;
+    border-radius:50px;
     color:#fff;
-    font-size:26px;
+    font-size:16px;
+    font-weight:bold;
     text-decoration:none;
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    animation:pulse 1.8s infinite;
+    transition:0.3s;
 }
-@keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.1);}
-    100%{transform:scale(1);}
+.float-buttons a:hover{
+    transform:translateX(-5px);
 }
-.whatsapp{background:#25D366;}
-.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);}
+.whatsapp{
+    background:#25D366;
+}
+.instagram{
+    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
 
 /* FOOTER */
 footer{
@@ -170,10 +172,10 @@ footer{
     <div class="services">
 
         <div class="service-box">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Satılık Daire">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Daire">
             <div>
                 <h3>🏠 Satılık & Kiralık Daire</h3>
-                <p>Merkez ve tüm ilçelerde bütçenize uygun, tapulu ve güvenilir daire seçenekleri.</p>
+                <p>Merkez ve tüm ilçelerde bütçenize uygun güvenilir daire seçenekleri.</p>
             </div>
         </div>
 
@@ -181,15 +183,15 @@ footer{
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Villa">
             <div>
                 <h3>🏡 Villa & Müstakil</h3>
-                <p>Bahçeli, lüks ve müstakil villa seçenekleri ile konforlu yaşam alanları.</p>
+                <p>Bahçeli, lüks ve müstakil yaşam alanları.</p>
             </div>
         </div>
 
         <div class="service-box">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Arsa Tarla">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Arsa">
             <div>
                 <h3>🌾 Arsa – Tarla – Parsel</h3>
-                <p>Yatırıma uygun, imarlı veya tarım arazileri için doğru yönlendirme.</p>
+                <p>Yatırıma uygun arazi ve imarlı parsel çözümleri.</p>
             </div>
         </div>
 
@@ -197,7 +199,7 @@ footer{
             <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Otomotiv">
             <div>
                 <h3>🚗 Otomotiv Alım-Satım</h3>
-                <p>Temiz ve güvenilir araç alım-satımı, hızlı ve sorunsuz işlemler.</p>
+                <p>Güvenilir ve hızlı araç alım-satım işlemleri.</p>
             </div>
         </div>
 
@@ -214,8 +216,12 @@ footer{
 
 <!-- FLOAT BUTTONS -->
 <div class="float-buttons">
-    <a class="instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">📷</a>
-    <a class="whatsapp" href="https://wa.me/905358263365" target="_blank">💬</a>
+    <a class="instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">
+        📷 Instagram
+    </a>
+    <a class="whatsapp" href="https://wa.me/905358263365" target="_blank">
+        💬 WhatsApp
+    </a>
 </div>
 
 <footer>
