@@ -36,24 +36,29 @@ h2{text-align:center;margin-bottom:40px;font-size:26px}
 
 /* GRID */
 .grid{
- display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
  gap:25px
 }
-.box{
- background:#fff;border-radius:12px;overflow:hidden;
+.box,.stat,.comment{
+ background:#fff;border-radius:12px;
  box-shadow:0 8px 20px rgba(0,0,0,.1);
- transform:translateY(25px);opacity:0;transition:.5s
+ padding:25px;text-align:center
 }
-.box.show{transform:translateY(0);opacity:1}
-.box img{width:100%;height:180px;object-fit:cover}
-.box div{padding:20px}
+.box img{
+ width:100%;height:180px;object-fit:cover;
+ border-radius:10px;margin-bottom:15px
+}
+
+/* STATS */
+.stats{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:25px
+}
+.stat h3{font-size:36px;color:#25D366;margin-bottom:10px}
 
 /* COMMENTS */
-.comment{
- background:#fff;border-radius:12px;padding:25px;
- box-shadow:0 8px 20px rgba(0,0,0,.1);
- text-align:center
-}
 .comment h4{margin-bottom:8px}
 .comment span{color:#f1c40f;font-size:18px}
 
@@ -93,11 +98,49 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
 <section>
 <h2>Hizmetlerimiz</h2>
 <div class="grid">
- <div class="box"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"><div><h3>🏢 Daire</h3><p>Satılık & kiralık daireler</p></div></div>
- <div class="box"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"><div><h3>🏡 Villa</h3><p>Müstakil yaşam alanları</p></div></div>
- <div class="box"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"><div><h3>🌾 Arsa</h3><p>Yatırıma uygun araziler</p></div></div>
- <div class="box"><img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5"><div><h3>🚗 Otomotiv</h3><p>Mercedes (siyah) & BMW (beyaz)</p></div></div>
+ <div class="box">
+  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+  <h3>🏢 Daire</h3>
+  <p>Satılık & kiralık daireler</p>
+ </div>
+ <div class="box">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+  <h3>🏡 Villa</h3>
+  <p>Müstakil yaşam alanları</p>
+ </div>
+ <div class="box">
+  <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+  <h3>🌾 Arsa / Tarla</h3>
+  <p>Yatırıma uygun araziler</p>
+ </div>
+ <div class="box">
+  <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5">
+  <h3>🚗 Otomotiv</h3>
+  <p>Mercedes (siyah) & BMW (beyaz)</p>
+ </div>
 </div>
+</section>
+
+<section>
+<h2>Müşteri Memnuniyeti</h2>
+<div class="stats">
+ <div class="stat">
+  <h3>150+</h3>
+  <p>Mutlu Müşteri</p>
+ </div>
+ <div class="stat">
+  <h3>%100</h3>
+  <p>Güvenli İşlem</p>
+ </div>
+ <div class="stat">
+  <h3>7/24</h3>
+  <p>İletişim & Destek</p>
+ </div>
+</div>
+<p style="text-align:center;margin-top:25px;font-size:16px">
+Her müşterimizi uzun vadeli bir dostluk olarak görür,  
+<strong>hızlı, şeffaf ve güvenilir</strong> hizmet sunarız.
+</p>
 </section>
 
 <section>
@@ -106,17 +149,17 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
  <div class="comment">
   <h4>Mehmet K.</h4>
   <span>★★★★★</span>
-  <p>Ev satış sürecimiz çok hızlı ve sorunsuz ilerledi. Güvenilir bir firma.</p>
+  <p>Ev satış sürecimiz çok hızlı ve sorunsuz ilerledi.</p>
  </div>
  <div class="comment">
   <h4>Ayşe T.</h4>
   <span>★★★★★</span>
-  <p>İlgili, güler yüzlü ve çözüm odaklılar. Kesinlikle tavsiye ederim.</p>
+  <p>Güler yüzlü, ilgili ve güvenilir bir ekip.</p>
  </div>
  <div class="comment">
   <h4>Ahmet Y.</h4>
   <span>★★★★★</span>
-  <p>Otomobil alımında her konuda yardımcı oldular, teşekkürler.</p>
+  <p>Araç alımında her konuda yardımcı oldular.</p>
  </div>
 </div>
 </section>
@@ -139,16 +182,5 @@ footer{background:#000;color:#fff;text-align:center;padding:20px}
 
 <footer>© 2025 NT Gayrimenkul & Otomotiv</footer>
 
-<script>
-const boxes=document.querySelectorAll('.box');
-window.addEventListener('scroll',()=>{
- boxes.forEach(b=>{
-  if(b.getBoundingClientRect().top<window.innerHeight-80){
-   b.classList.add('show');
-  }
- });
-});
-</script>
-
 </body>
-</html>
+  </html>
