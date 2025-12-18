@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NT Gayrimenkul & Otomotiv | Kayseri</title>
+<title>NT Gayrimenkul & Otomotiv</title>
 
 <style>
 *{
@@ -12,49 +12,51 @@
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 body{
-    background:#0e0e0e;
-    color:#fff;
+    background:#f4f4f4;
+    color:#333;
 }
 
 /* HEADER */
 header{
+    background:#000;
+    color:#fff;
     text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(180deg,#000,#1a1a1a);
+    padding:30px 15px;
 }
-
 header img{
     width:160px;
     border-radius:50%;
-    box-shadow:0 0 25px rgba(212,175,55,0.6);
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
-
 header h1{
-    color:#d4af37;
-    font-size:28px;
+    font-size:26px;
     margin-bottom:10px;
+    letter-spacing:1px;
 }
-
 header p{
-    color:#ccc;
-    font-size:16px;
+    font-size:15px;
+    opacity:0.9;
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
-    padding:50px 20px;
+    padding:40px 20px;
     max-width:1100px;
     margin:auto;
 }
-
-.section-title{
+section h2{
     text-align:center;
-    font-size:26px;
-    color:#d4af37;
-    margin-bottom:30px;
+    margin-bottom:25px;
+    font-size:24px;
+    color:#111;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    font-size:16px;
+    line-height:1.7;
 }
 
 /* SERVICES */
@@ -63,70 +65,65 @@ section{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
-
 .service-box{
-    background:#1b1b1b;
+    background:#fff;
     padding:25px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 0 10px rgba(0,0,0,0.6);
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
-
 .service-box h3{
-    color:#d4af37;
     margin-bottom:10px;
+    color:#000;
 }
-
 .service-box p{
-    color:#ccc;
-    font-size:15px;
+    font-size:14px;
     line-height:1.6;
 }
 
-/* ABOUT */
-.about{
-    background:#141414;
-    border-radius:12px;
-    padding:30px;
-    line-height:1.7;
-    color:#ccc;
+/* CONTACT */
+.contact{
     text-align:center;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* FLOAT BUTTONS */
+.float-buttons{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:999;
+}
+.float-buttons a{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:26px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+.whatsapp{
+    background:#25D366;
+}
+.instagram{
+    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
 }
 
 /* FOOTER */
 footer{
     background:#000;
-    padding:25px;
-    text-align:center;
-    color:#aaa;
-    font-size:14px;
-}
-
-footer a{
-    color:#d4af37;
-    text-decoration:none;
-    margin:0 10px;
-}
-
-/* WHATSAPP BUTTON */
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25d366;
     color:#fff;
-    padding:14px 18px;
-    border-radius:50px;
-    font-size:16px;
-    text-decoration:none;
-    box-shadow:0 0 15px rgba(0,0,0,0.5);
-    animation:pulse 1.8s infinite;
-}
-
-@keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.07);}
-    100%{transform:scale(1);}
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    margin-top:40px;
 }
 </style>
 </head>
@@ -135,60 +132,84 @@ footer a{
 
 <header>
     <img src="logo.png" alt="NT Gayrimenkul Logo">
-    <h1>NT Gayrimenkul & Otomotiv</h1>
-    <p>Kayseri’nin Tüm İlçelerinde Satılık & Kiralık Çözümler</p>
+    <h1>NT GAYRİMENKUL & OTOMOTİV</h1>
+    <p>Kayseri’nin Tüm İlçelerinde Güvenilir Satış & Kiralama</p>
 </header>
 
-<section>
-    <h2 class="section-title">Hizmetlerimiz</h2>
+<section class="about">
+    <h2>Hakkımızda</h2>
+    <p>
+        NT Gayrimenkul & Otomotiv olarak Kayseri’nin tüm ilçelerinde 
+        <strong>satılık ve kiralık gayrimenkul</strong> ile 
+        <strong>otomotiv alım-satım</strong> hizmetleri sunuyoruz.  
+        Güven, şeffaflık ve doğru fiyat politikasıyla müşterilerimize 
+        en doğru çözümleri üretmeyi hedefliyoruz.
+    </p>
+</section>
 
+<section>
+    <h2>Hizmetlerimiz</h2>
     <div class="services">
         <div class="service-box">
             <h3>🏠 Satılık Daire</h3>
-            <p>Merkez ve tüm ilçelerde bütçenize uygun, tapulu ve güvenilir satılık daire seçenekleri.</p>
+            <p>
+                Kayseri genelinde bütçenize ve ihtiyaçlarınıza uygun 
+                satılık daire seçenekleri sunuyor, tapu ve süreç takibini 
+                eksiksiz şekilde gerçekleştiriyoruz.
+            </p>
         </div>
 
         <div class="service-box">
             <h3>🔑 Kiralık Daire</h3>
-            <p>Aileye uygun, öğrenciye uygun ve merkezi konumda kiralık daire alternatifleri.</p>
+            <p>
+                Merkezi konumlarda, güvenilir kiracılık ve ev sahipliği 
+                süreçleriyle kiralık daire çözümleri sağlıyoruz.
+            </p>
         </div>
 
         <div class="service-box">
-            <h3>🏡 Villa & Müstakil</h3>
-            <p>Bahçeli, lüks veya müstakil villa seçenekleri ile hayalinizdeki yaşam alanları.</p>
+            <h3>🏡 Villa</h3>
+            <p>
+                Müstakil yaşam isteyenler için satılık ve kiralık 
+                villa seçeneklerini profesyonel danışmanlıkla sunuyoruz.
+            </p>
         </div>
 
         <div class="service-box">
-            <h3>🌾 Arsa – Tarla – Parsel</h3>
-            <p>Yatırıma uygun, imarlı veya tarım arazileri için doğru ve güvenilir danışmanlık.</p>
+            <h3>🌾 Tarla & Arsa</h3>
+            <p>
+                Yatırımlık tarla, arsa ve imarlı parsel seçeneklerinde 
+                doğru lokasyon ve kazanç odaklı danışmanlık veriyoruz.
+            </p>
         </div>
 
         <div class="service-box">
-            <h3>🚗 Otomotiv Alım & Satım</h3>
-            <p>Temiz, güvenilir araç alım–satım işlemleri için profesyonel destek.</p>
+            <h3>🚗 Otomotiv Alım-Satım</h3>
+            <p>
+                Güvenilir araç alım-satımı, piyasa analizi ve hızlı işlem 
+                desteğiyle otomotiv ihtiyaçlarınıza çözüm üretiyoruz.
+            </p>
         </div>
     </div>
 </section>
 
-<section>
-    <h2 class="section-title">Hakkımızda</h2>
-    <div class="about">
-        NT Gayrimenkul & Otomotiv olarak Kayseri’nin tüm ilçelerinde
-        satılık ve kiralık gayrimenkul ile otomotiv alım–satım hizmeti sunuyoruz.
-        <br><br>
-        Güven, şeffaflık ve müşteri memnuniyeti odaklı çalışıyor,
-        her adımda yanınızda oluyoruz.
-    </div>
+<section class="contact">
+    <h2>İletişim</h2>
+    <p>
+        📞 <strong>Telefon / WhatsApp:</strong> +90 535 826 33 65<br>
+        📍 Kayseri – Tüm İlçeler
+    </p>
 </section>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-buttons">
+    <a class="instagram" href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">📷</a>
+    <a class="whatsapp" href="https://wa.me/905358263365" target="_blank">💬</a>
+</div>
 
 <footer>
-    📞 <strong>WhatsApp:</strong> +90 535 826 33 65 <br><br>
-    <a href="https://www.instagram.com/nt_gayrimenkulotomotivv" target="_blank">Instagram</a>
+    © 2025 NT Gayrimenkul & Otomotiv | Tüm Hakları Saklıdır
 </footer>
 
-<a class="whatsapp" href="https://wa.me/905358263365" target="_blank">
-💬 WhatsApp
-</a>
-
 </body>
-    </html>
+</html>
